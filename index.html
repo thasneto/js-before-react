@@ -1,13 +1,66 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="assets/script.js"></script>
-  </body>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<link rel="stylesheet" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Vite App</title>
+</head>
+
+<body>
+	<main>
+		<form>
+			<h1>Calculo Notas</h1>
+
+			<!-- NAME -->
+			<div class="input-box">
+				<label for="name">
+					Nome
+					<div class="input-field">
+						<input type="text" name="name" id="name">
+					</div>				
+				</label>
+			</div>
+
+			<!-- NOTA 1 -->
+			<div class="input-box">
+				<label for="nota1">
+					Nota 1
+					<div class="input-field">
+						<input type="text" name="nota1" id="nota1">
+					</div>	
+				</label>
+			</div>
+
+			<!-- NOTA 2 -->
+			<div class="input-box">
+				<label for="nota2">
+					Nota 2
+					<div class="input-field">
+						<input type="text" name="nota2" id="nota2">
+					</div>
+				</label>
+			</div>
+			
+			<!-- NOTA 3 -->
+			<div class="input-box">
+				<label for="nota3">
+					Nota 3
+					<div class="input-field">
+						<input type="text" name="nota3" id="nota3">
+					</div>
+				</label>
+			</div>
+
+			<!-- APPLY FORM -->
+			<button type="button" id="botao" >Calcular Media</button>
+
+			<h3 id="result"></h3>
+		</form>
+	</main>
+	<script type="module" src="assets/js/script.js"></script>
+</body>
+
 </html>
