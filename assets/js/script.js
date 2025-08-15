@@ -79,7 +79,7 @@ botaoCalc.addEventListener ("click", () => {
 });
 
 const calcMedia = (nome, n1, n2, n3) => {	
-	const media = (n1 + n2 + n3) / 3;
+	const media = (n1*0.3 + n2*0.3 + n3*0.4);
 
 	if (media < 50) {
 		return `Desculpe, ${nome},<br>Sua Media foi ${media.toFixed(2)},<br>Reprovado!`;

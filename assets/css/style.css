@@ -78,10 +78,24 @@ form button {
 	margin: 20px 0 0 0;
 	height: 30px;
 	border: none;
+	border-radius: 6px;
 	background: var(--color-gradient);
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 700;
 	color: var(--color-light-50);
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form button:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#result {
+	border-radius: 6px;
+	margin-top: 15px;
+	font-weight: bold;
 }
 
 @media (max-width: 400px) {
